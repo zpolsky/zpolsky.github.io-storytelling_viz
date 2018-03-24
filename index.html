@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment 5 - Storytelling Visualization</title>
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+      <!--Adapted from http://www.latimes.com/opinion/op-ed/la-oe-duwe-rocque-mass-shootings-mental-illness-20180223-story.html -->
+      <div class="article-body">
+        <h1>Actually, there is a clear link between mass shootings and mental illness</h1>
+        <h4>By Grant Duwe and Michael Rocque</h4>
+        <img class="article-image" alt="Actually, there is a clear link between mass shootings and mental illness"
+        src="http://www.latimes.com/resizer/fWFEiNZS_ItJZ0--Fqrd1L6KkRU=/1400x0/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/JSABEE7ZSBGYVDOUURGBLJWYWU.jpg">
+        <div class="article-text">
+          <p>
+            "Repeat after me: Mass shooters are not disproportionately mentally ill."
+          </p>
+          <p>
+            This is the opening line of a meme that's been circulating in the aftermath of the shooting in Parkland, Fla.
+          </p>
+          <p>
+            But this and other efforts to downplay the role of mental illness in mass shootings are simply misleading.
+            There is a clear relationship between mental illness and mass public shootings.
+          </p>
+          <p>
+            At the broadest level, peer-reviewed research has shown that individuals with major mental disorders (those
+            that substantially interfere with life activities) are more likely to commit violent acts, especially if
+            they abuse drugs. When we focus more narrowly on mass public shootings — an extreme and, fortunately, rare
+            form of violence — we see a relatively high rate of mental illness.
+          <p>
+            According to our research, at least 59% of the 185 public mass shootings that took place in the United States
+            from 1900 through 2017 were carried out by people who had either been diagnosed with a mental disorder or
+            demonstrated signs of serious mental illness prior to the attack. (We define a mass public shooting as any
+            incident in which four or more victims are killed with a gun within a 24-hour period at a public location in
+            the absence of military conflict, collective violence or other criminal activity, such as robberies, drug
+            deals or gang turf wars.)
+          </p>
+          <p>
+            Mother Jones found a similarly high rate of potential mental health problems among perpetrators of mass
+            shootings — 61% — when the magazine examined 62 cases in 2012.
+          </p>
+          <p>
+            Both rates are considerably higher than those found in the general population — more than three times
+            higher than the rate of mental illness found among American adults, and about 15 times higher than the
+            rate of serious mental illness found among American adults.
+          </p>
+          <p>
+            And yet this nuance often gets lost in mainstream news reports. In a story that largely suggested mass
+            murderers are not "insane," the New York Times cited research showing that, in fact, mass murderers are
+            nearly 20 times more likely to have a "severe" mental illness than the general population.
+          </p>
+          <p>
+            According to our research, only one-third of the people who have committed mass shootings in the U.S. since
+            1900 had sought or received mental health care prior to their attacks, which suggests that most shooters
+            did not seek or receive care they may have needed.
+          </p>
+          <p>
+            This treatment gap is underscored by evidence showing that the U.S. has higher rates of untreated serious mental
+            illness than most other Western countries. Additional research shows that the gap is even larger for males, who
+            have committed 99% of the country's mass public shootings.
+          </p>
+          <div id="viz">
+            <h3 class="title">US Mass Shootings from 1966 to 2017</h3>
+          </div>
+          <p>
+            Although the link between mass shootings and mental illness has only recently gained widespread recognition, the
+            correlation itself is longstanding. Indeed, we see it in some of the earliest such shootings in the U.S. Gilbert
+            Twigg, who opened fire on a concert crowd in Winfield, Kan., in 1903, killing nine, had displayed signs of paranoia
+            beforehand. Howard Unruh, who shot and killed 13 people in Camden, N.J., in 1949, was later diagnosed with paranoid
+            schizophrenia. (Both were also Army veterans who had seen combat.)
+          </p>
+          <p>
+            One of the primary reasons some are reluctant to establish the link between mass shootings and mental illness is
+            a fear that it will lead to the stigmatization of such disorders. This concern is valid. The vast majority of people
+            with mental disorders are not violent, after all.
+          </p>
+          <p>
+            Conversely, some have insisted — wrongly, in our opinion — that mass public shootings are <em>strictly</em> a mental health
+            problem rather than a gun problem. They, too, are on the wrong side of the evidence. It's possible for mass public
+            shootings to be both a gun problem <em>and</em> a mental health problem.
+          </p>
+          <p>
+            Increasing access to mental health care may reduce mass public shootings. But while such events are more commonplace
+            than they should be, the reality may be that they're still too rare to develop and implement policies that reduce
+            their incidence or severity specifically.
+          </p>
+          <p>
+            Policymakers should therefore focus on strategies that have shown promise in reducing gun violence in general,
+            like a federal universal background check.
+          </p>
+          <p>
+            Because there's still a lot we don't understand about mass shootings, we need to invest in research to develop
+            evidence-based solutions. In the meantime, the media should stop glorifying this violence. In the midst of our
+            tribal hyperpartisanship, the debate over mass shootings is doomed to continue ignoring facts. We won't make
+            any progress until those on the mental health side and those on the gun side find common ground that's rooted
+            in empirical reality.
+          </p>
+          <p>
+            <em>Grant Duwe is research director for the Minnesota Department of Corrections and the author of "Mass Murder in the
+            United States: A History." Michael Rocque is a professor of sociology at Bates College.</em>
+          </p>
+          <p>
+            Original article: <a
+            href="http://www.latimes.com/opinion/op-ed/la-oe-duwe-rocque-mass-shootings-mental-illness-20180223-story.html">
+            http://www.latimes.com/opinion/op-ed/la-oe-duwe-rocque-mass-shootings-mental-illness-20180223-story.html</a>
+          </p>
+          </p>
+        </div>
+      </div>
+    </body>
+</html>
